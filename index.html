@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#09070f">
-  <title>Cineflix — Filmes, séries e canais em um só lugar</title>
-  <meta name="description" content="Conheça a Cineflix e escolha o plano ideal para assistir em diferentes dispositivos.">
+  <title>OmniPlay — Filmes, séries e canais em um só lugar</title>
+  <meta name="description" content="Conheça a OmniPlay e escolha o plano ideal para assistir em diferentes dispositivos.">
   <link rel="preconnect" href="https://i0.wp.com">
   <style>
     :root {
@@ -623,13 +623,41 @@
   .reveal{opacity:1!important;transform:none!important}
 }
 
+
+/* ===== OMNIPLAY V6 ===== */
+.logo{height:54px!important;width:auto!important;object-fit:contain}
+.youtube-wrap{position:relative;z-index:1;width:100%;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:#05030a}
+.youtube-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.omni-pricing{padding:68px 0 92px;background:#02021d}
+.omni-plan-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;max-width:1120px;margin:38px auto 0}
+.omni-plan{min-height:645px;border-radius:16px;padding:24px 25px 20px;display:flex;flex-direction:column;border:1px solid #8d45e9}
+.omni-plan.dark{background:#151748;color:#fff}
+.omni-plan.light{background:linear-gradient(180deg,#f7f6fa,#e7d5ff);color:#080817}
+.omni-plan.annual{background:linear-gradient(180deg,#a95af0,#6f2eb5);color:#fff}
+.omni-label{text-align:center;font-size:25px;font-weight:900;letter-spacing:.19em;line-height:1}
+.omni-plan h3{text-align:center;margin:9px 0 23px;font-size:35px;line-height:1;color:#9741ed;letter-spacing:-.04em}
+.omni-plan.annual h3{color:#fff}
+.omni-plan ul{list-style:none;padding:0;margin:0;display:grid;gap:16px;font-size:15px;font-weight:700;line-height:1.25}
+.omni-plan li{position:relative;padding-left:31px}
+.omni-plan li:before{content:"✓";position:absolute;left:0;top:0;width:20px;height:20px;border-radius:50%;display:grid;place-items:center;background:#00d93b;color:#fff;font-size:13px;font-weight:950}
+.omni-discount{margin-top:auto;background:#fff;color:#5d20af;border-radius:8px;padding:10px 8px;text-align:center;font-size:13px;font-weight:950}
+.omni-plan:first-child .omni-price{margin-top:auto}
+.omni-price{display:flex;align-items:flex-end;gap:10px;margin:20px 0 14px;color:#9439e9}
+.omni-price span{font-size:23px;font-weight:900;line-height:1}
+.omni-price strong{font-size:55px;line-height:.88;letter-spacing:-.05em}
+.omni-plan.annual .omni-price{color:#fff}
+.omni-buy{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;height:60px;border-radius:999px;background:linear-gradient(90deg,#a84df4,#7b05d8);color:#fff;font-size:16px;font-weight:950;border:7px solid rgba(130,49,217,.25)}
+.omni-buy.black{background:#111;border-color:rgba(54,28,74,.55)}
+@media(max-width:980px){.omni-plan-grid{grid-template-columns:1fr 1fr;max-width:680px}}
+@media(max-width:640px){.logo{height:42px!important}.omni-pricing{padding:48px 0 65px}.omni-plan-grid{grid-template-columns:1fr;max-width:340px;gap:18px}.omni-plan{min-height:610px}.omni-label{font-size:21px}.omni-plan h3{font-size:31px}.omni-plan ul{font-size:14px}.omni-price strong{font-size:52px}}
+
 </style>
 </head>
 <body>
   <div class="announcement">Acesso rápido • Conteúdo para vários dispositivos • Compra segura</div>
   <header>
     <div class="container nav">
-      <a href="#inicio"><img class="logo" src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/05/Logo-cine2-scaled-1.webp?fit=800%2C203&ssl=1" alt="Cineflix"></a>
+      <a href="#inicio"><img class="logo" src="https://www.omniplay.me/wp-content/uploads/2025/11/LGOO.webp" alt="OmniPlay"></a>
       <nav class="navlinks">
         <a href="#catalogo">Catálogo</a>
         <a href="#beneficios">Benefícios</a>
@@ -643,11 +671,11 @@
   <main id="inicio">
     <section class="hero">
       <div class="hero-visual">
-        <img class="hero-character" src="cineflix-hero-cat.jpg" alt="Mascote Cineflix assistindo a filmes">
+        <img class="hero-character" src="omniplay-hero-cat.jpg" alt="Mascote OmniPlay assistindo a filmes">
       </div>
       <div class="hero-grid">
         <div class="hero-copy">
-          <h1>Conheça a <span class="gradient">Cineflix</span></h1>
+          <h1>Conheça a <span class="gradient">OmniPlay</span></h1>
           <p class="hero-sub">A liberdade que sua TV merece. Sem mensalidade abusiva. Sem limites.</p>
           <div class="hero-benefits">
             <span>+10.000 canais abertos e fechados</span>
@@ -666,21 +694,28 @@
   <div class="container expert-wrap">
     <div class="expert-heading">
       <span class="mini-label">VEJA COMO FUNCIONA</span>
-      <h2>Conheça a experiência <span>Cineflix</span></h2>
+      <h2>Conheça a experiência <span>OmniPlay</span></h2>
       <p>Assista à apresentação e veja na prática como é o acesso à plataforma.</p>
     </div>
+    
     <div class="expert-video-shell">
       <div class="expert-glow"></div>
-      <video class="expert-video" controls playsinline preload="metadata" poster="expert-poster.jpg">
-        <source src="expert-cineflix.mp4" type="video/mp4">
-        Seu navegador não suporta vídeo.
-      </video>
+      <div class="youtube-wrap">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/LELb5Gqi4P8?rel=0&modestbranding=1"
+          title="Apresentação OmniPlay"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
     </div>
+
     <div class="expert-proof">
       <div class="avatar-stack">
         <span>👤</span><span>👤</span><span>👤</span><span>👤</span>
       </div>
-      <div><strong>+ de 1.300 pessoas</strong> já estão aproveitando a Cineflix.</div>
+      <div><strong>+ de 1.300 pessoas</strong> já estão aproveitando a OmniPlay.</div>
     </div>
   </div>
 </section>
@@ -688,7 +723,7 @@
 
     <div class="social-proof">
       <div class="container proof-box">
-        <img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/PROVAS.webp?fit=497%2C132&ssl=1" alt="Clientes Cineflix">
+        <img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/PROVAS.webp?fit=497%2C132&ssl=1" alt="Clientes OmniPlay">
         <span>Uma plataforma feita para quem quer variedade sem complicação.</span>
       </div>
     </div>
@@ -701,10 +736,10 @@
   </div>
   <div class="marquee-shell">
     <div class="marquee-row marquee-left">
-      <div class="marquee-track"><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-01.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/image5.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/FILME-1.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-17.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/FILME-2.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-18.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/FILME-3.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-15.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-13.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-14.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-07.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-16.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-05.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-04.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-01.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/image5.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/FILME-1.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-17.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/FILME-2.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-18.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/FILME-3.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-15.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-13.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-14.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-07.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-16.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-05.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-04.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div></div>
+      <div class="marquee-track"><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-01.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/image5.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/FILME-1.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-17.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/FILME-2.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-18.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/FILME-3.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-15.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-13.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-14.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-07.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-16.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-05.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-04.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-01.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/image5.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/FILME-1.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-17.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/FILME-2.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-18.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/FILME-3.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-15.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-13.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-14.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-07.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-16.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-05.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-04.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div></div>
     </div>
     <div class="marquee-row marquee-right">
-      <div class="marquee-track"><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-03.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-06.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-02.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-10.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/FILME-4.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/image3.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Serie-02.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Serie-03.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/FILME-5.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Serie-08.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Serie-10.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Serie-11.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/FILME-6.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Serie-12.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-03.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-06.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-02.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Filme-10.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/FILME-4.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/image3.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Serie-02.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Serie-03.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/FILME-5.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Serie-08.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Serie-10.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Serie-11.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/FILME-6.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/07/Serie-12.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div></div>
+      <div class="marquee-track"><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-03.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-06.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-02.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-10.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/FILME-4.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/image3.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Serie-02.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Serie-03.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/FILME-5.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Serie-08.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Serie-10.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Serie-11.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/FILME-6.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Serie-12.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-03.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-06.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-02.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Filme-10.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/FILME-4.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/image3.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Serie-02.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Serie-03.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/FILME-5.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Serie-08.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Serie-10.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Serie-11.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/FILME-6.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div><div class="movie-card"><img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/07/Serie-12.webp?fit=500%2C750&ssl=1" alt="" loading="lazy"></div></div>
     </div>
   </div>
   <div class="container catalog-cta">
@@ -723,19 +758,19 @@
 
     <div class="category-grid">
       <article class="category-card reveal">
-        <img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/01/image-2262.webp?fit=800%2C420&ssl=1" alt="Filmes e séries">
+        <img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/01/image-2262.webp?fit=800%2C420&ssl=1" alt="Filmes e séries">
         <div><h3>Filmes e séries</h3><p>Grandes títulos, lançamentos e conteúdos para maratonar.</p></div>
       </article>
       <article class="category-card reveal">
-        <img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/01/image-2263.webp?fit=800%2C420&ssl=1" alt="Animes">
+        <img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/01/image-2263.webp?fit=800%2C420&ssl=1" alt="Animes">
         <div><h3>Animes Crunchyroll</h3><p>Animes populares, clássicos e novidades para todos os públicos.</p></div>
       </article>
       <article class="category-card reveal">
-        <img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/01/image-2265.webp?fit=800%2C420&ssl=1" alt="Infantil">
+        <img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/01/image-2265.webp?fit=800%2C420&ssl=1" alt="Infantil">
         <div><h3>Canais infantis</h3><p>Conteúdo para a criançada se divertir com segurança.</p></div>
       </article>
       <article class="category-card reveal">
-        <img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/01/image-2268.webp?fit=800%2C420&ssl=1" alt="Novelas">
+        <img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/01/image-2268.webp?fit=800%2C420&ssl=1" alt="Novelas">
         <div><h3>Novelas</h3><p>Novelas antigas e novas, reunidas em um só lugar.</p></div>
       </article>
     </div>
@@ -795,13 +830,13 @@
     <section class="comparison-section">
   <div class="container narrow-ref">
     <div class="comparison-copy">
-      <h2>Veja quanto você economiza com a Cineflix</h2>
+      <h2>Veja quanto você economiza com a OmniPlay</h2>
       <p>Tenha em uma única plataforma o conteúdo que você encontraria em vários serviços de streaming.</p>
     </div>
 
     <div class="comparison-card">
       <div class="compare-row compare-head">
-        <div>Serviço</div><div>Preço</div><div>Incluído na Cineflix</div>
+        <div>Serviço</div><div>Preço</div><div>Incluído na OmniPlay</div>
       </div>
       <div class="compare-row"><div class="brand netflix">NETFLIX</div><div class="red">R$ 59,90</div><div class="check-green">✓</div></div>
       <div class="compare-row alt"><div class="brand prime">prime video</div><div class="red">R$ 19,90</div><div class="check-green">✓</div></div>
@@ -818,7 +853,7 @@
 
       <div class="compare-bottom">
         <b>AO TODO VOCÊ PAGARIA <span>R$ 463,95 POR MÊS</span></b>
-        <strong>Já com o Cineflix você pagará<br>apenas R$ 137,90 para o ano inteiro!!</strong>
+        <strong>Já com o OmniPlay você pagará<br>apenas R$ 138,90 para o ano inteiro!!</strong>
       </div>
     </div>
   </div>
@@ -843,78 +878,68 @@
   </div>
 </section>
 
-<section class="ref-pricing" id="planos">
+
+<section class="omni-pricing" id="planos">
   <div class="container">
-    <div class="ref-title">
-      <h2>Aproveite e <span>economize agora</span></h2>
-      <p>Preço que cabe no seu bolso, não perca essa chance de pagar menos e assistir muito mais.</p>
+    <div class="ref-title reveal">
+      <h2>Aproveite essa <span>oportunidade única!</span></h2>
+      <p>Escolha o plano ideal para você e adquira seu acesso à OmniPlay.</p>
     </div>
-
-    <div class="ref-plan-grid">
-      <article class="ref-plan light">
-        <div class="diamond">♢</div>
-        <h3>Plano <b>Start</b></h3>
-        <small>Mensal</small>
-        <div class="ref-price">R$24,90</div>
-        <div class="discount-placeholder"></div>
+    <div class="omni-plan-grid">
+      <article class="omni-plan dark reveal">
+        <div class="omni-label">PLANO</div><h3>MENSAL</h3>
         <ul>
-          <li>1 Mês de Acesso</li>
-          <li>Assista em até 2<br>Dispositivos simultâneos</li>
-          <li>Mais de 40.000 conteúdos</li>
-          <li>Compatível com<br>múltiplos dispositivos</li>
-          <li>Gerente de conta dedicado</li>
-        </ul>
-        <a href="https://go.atomopay.com.br/jgeam?affh=4juczkhrm0" class="ref-buy" target="_blank" rel="noopener">ADQUIRIR PLANO</a>
+      <li>Acesso de 1 mês</li>
+      <li>Assista em 2<br>telas simultâneas</li>
+      <li>+ de 40 mil conteúdos</li>
+      <li>Canais Adultos<br>(opcional)</li>
+      <li>Qualidade<br>SD/HD/FHD/4K</li>
+      <li>Assista na Smart TV,<br>Tablet, Smartphone, TV<br>Box ou Computador.</li>
+    </ul>
+        <div class="omni-price"><span>Por<br>R$</span><strong>24,90</strong></div>
+        <a href="https://go.atomopay.com.br/8vdmezprva?affh=05exf2xgie" target="_blank" rel="noopener" class="omni-buy">COMPRAR AGORA</a>
       </article>
-
-      <article class="ref-plan light">
-        <div class="diamond">♢</div>
-        <h3>Plano <b>Pro</b></h3>
-        <small>Semestral</small>
-        <div class="ref-price">R$69,90</div>
-        <div class="ref-discount">🎁 30% DE DESCONTO</div>
+      <article class="omni-plan dark reveal">
+        <div class="omni-label">PLANO</div><h3>TRIMESTRAL</h3>
         <ul>
-          <li>6 Meses de Acesso</li>
-          <li>Assista em até 2<br>Dispositivos simultâneos</li>
-          <li>Mais de 40.000 conteúdos</li>
-          <li>Compatível com<br>múltiplos dispositivos</li>
-          <li>Gerente de conta dedicado</li>
-        </ul>
-        <a href="https://go.atomopay.com.br/mruuv?affh=4juczkhrm0" class="ref-buy" target="_blank" rel="noopener">ADQUIRIR PLANO</a>
+      <li>Acesso de 3 meses</li>
+      <li>Assista em 2<br>telas simultâneas</li>
+      <li>+ de 40 mil conteúdos</li>
+      <li>Canais Adultos<br>(opcional)</li>
+      <li>Qualidade<br>SD/HD/FHD/4K</li>
+      <li>Assista na Smart TV,<br>Tablet, Smartphone, TV<br>Box ou Computador.</li>
+    </ul>
+        <div class="omni-discount">🎁 &nbsp;30% DE DESCONTO</div>
+        <div class="omni-price"><span>Por<br>R$</span><strong>43,90</strong></div>
+        <a href="https://go.atomopay.com.br/buaqg?affh=05exf2xgie" target="_blank" rel="noopener" class="omni-buy">COMPRAR AGORA</a>
       </article>
-
-      <article class="ref-plan light">
-        <div class="diamond">♢</div>
-        <h3>Plano <b>Prime</b></h3>
-        <small>Anual</small>
-        <div class="ref-price">R$129,90</div>
-        <div class="install-ref">Em até 10x</div>
-        <div class="ref-discount">🎁 40% DE DESCONTO</div>
+      <article class="omni-plan light reveal">
+        <div class="omni-label">PLANO</div><h3>SEMESTRAL</h3>
         <ul>
-          <li>1 Ano de Acesso</li>
-          <li>Assista em até 4<br>Dispositivos simultâneos</li>
-          <li>Mais de 40.000 conteúdos</li>
-          <li>Compatível com<br>múltiplos dispositivos</li>
-          <li>Gerente de conta dedicado</li>
-        </ul>
-        <a href="https://go.atomopay.com.br/nxeri?affh=4juczkhrm0" class="ref-buy" target="_blank" rel="noopener">ADQUIRIR PLANO</a>
+      <li>Acesso de 6 meses</li>
+      <li>Assista em 2<br>telas simultâneas</li>
+      <li>+ de 40 mil conteúdos</li>
+      <li>Canais Adultos<br>(opcional)</li>
+      <li>Qualidade<br>SD/HD/FHD/4K</li>
+      <li>Assista na Smart TV,<br>Tablet, Smartphone, TV<br>Box ou Computador.</li>
+    </ul>
+        <div class="omni-discount">🎁 &nbsp;40% DE DESCONTO</div>
+        <div class="omni-price"><span>Por<br>R$</span><strong>72,90</strong></div>
+        <a href="https://go.atomopay.com.br/b3ygc?affh=05exf2xgie" target="_blank" rel="noopener" class="omni-buy">COMPRAR AGORA</a>
       </article>
-
-      <article class="ref-plan ultimate">
-        <div class="diamond white">♢</div>
-        <h3>Plano <b>Ultimate</b></h3>
-        <small>Bienal</small>
-        <div class="ref-price">R$197</div>
-        <div class="install-ref">Em até 10x</div>
-        <div class="ref-discount">🎁 50% DE DESCONTO</div>
+      <article class="omni-plan annual reveal">
+        <div class="omni-label">PLANO</div><h3>ANUAL</h3>
         <ul>
-          <li>2 Anos de Acesso</li>
-          <li>Assista em até 4<br>Dispositivos simultâneos</li>
-          <li>Mais de 40.000 conteúdos</li>
-          <li>Compatível com<br>múltiplos dispositivos</li>
-          <li>Gerente de conta dedicado</li>
-        </ul>
-        <a href="https://go.atomopay.com.br/vg75g?affh=4juczkhrm0" class="ref-buy" target="_blank" rel="noopener">ADQUIRIR PLANO</a>
+      <li>Acesso de 1 ano</li>
+      <li>Assista em 3<br>telas simultâneas</li>
+      <li>+ de 40 mil conteúdos</li>
+      <li>Canais Adultos<br>(opcional)</li>
+      <li>Qualidade<br>SD/HD/FHD/4K</li>
+      <li>Assista na Smart TV,<br>Tablet, Smartphone, TV<br>Box ou Computador.</li>
+    </ul>
+        <div class="omni-discount">🎁 &nbsp;50% DE DESCONTO</div>
+        <div class="omni-price"><span>Por<br>R$</span><strong>138,90</strong></div>
+        <a href="https://go.atomopay.com.br/50iin?affh=05exf2xgie" target="_blank" rel="noopener" class="omni-buy black">COMPRAR AGORA</a>
       </article>
     </div>
   </div>
@@ -950,21 +975,21 @@
   
 <section class="footer-trust reveal">
   <div class="container footer-trust-inner">
-    <img class="trust-logo" src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/05/Logo-cine2-scaled-1.webp?fit=800%2C203&ssl=1" alt="Cineflix">
+    <img class="trust-logo" src="https://www.omniplay.me/wp-content/uploads/2025/11/LGOO.webp" alt="OmniPlay">
     <h3>Formas de Pagamento</h3>
-    <img class="trust-pay" src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/05/FORMAS-DE-PAGAMENTO.webp?fit=715%2C155&ssl=1" alt="Formas de pagamento">
+    <img class="trust-pay" src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/05/FORMAS-DE-PAGAMENTO.webp?fit=715%2C155&ssl=1" alt="Formas de pagamento">
     <h3>Site seguro</h3>
-    <img class="trust-secure" src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/05/SELO-SITE-SEGURO.webp?fit=800%2C137&ssl=1" alt="Site seguro">
+    <img class="trust-secure" src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/05/SELO-SITE-SEGURO.webp?fit=800%2C137&ssl=1" alt="Site seguro">
   </div>
 </section>
 
 <footer>
     <div class="container">
       <div class="foot">
-        <img class="logo" src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/05/Logo-cine2-scaled-1.webp?fit=800%2C203&ssl=1" alt="Cineflix">
+        <img class="logo" src="https://www.omniplay.me/wp-content/uploads/2025/11/LGOO.webp" alt="OmniPlay">
         <div class="pay">
-          <img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/05/FORMAS-DE-PAGAMENTO.webp?fit=715%2C155&ssl=1" alt="Formas de pagamento">
-          <img src="https://i0.wp.com/www.acessocineflix.vip/wp-content/uploads/2026/05/SELO-SITE-SEGURO.webp?fit=800%2C137&ssl=1" alt="Site seguro">
+          <img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/05/FORMAS-DE-PAGAMENTO.webp?fit=715%2C155&ssl=1" alt="Formas de pagamento">
+          <img src="https://i0.wp.com/www.acessoomniplay.vip/wp-content/uploads/2026/05/SELO-SITE-SEGURO.webp?fit=800%2C137&ssl=1" alt="Site seguro">
         </div>
       </div>
       <div class="legal">Página independente de divulgação de afiliado. As condições finais, disponibilidade, garantia, entrega e regras comerciais válidas são as exibidas no checkout do produto. Marcas e imagens pertencem aos respectivos titulares. Confirme que seu contrato/programa de afiliados permite o uso desses materiais antes da publicação.</div>
